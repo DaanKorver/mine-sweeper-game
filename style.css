@@ -3,3 +3,31 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    background-color: darkslategrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    background-color: grey;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 2px;
+}
+
+.tile {
+    width: calc(500px / 8);
+    height: calc(500px / 8);
+    background-color: black;
+    position: relative;
+    margin: 0 auto;
+}
